@@ -5,7 +5,7 @@ module.exports = {
   name: '__MSG_extName__',
   description: '__MSG_extDescription__',
   author: 'Ludwig Stockbauer-Muhr <ludwig.stockbauer-muhr@msg.group>',
-  version: '1.0.1',
+  version: '0.1.0',
   icons: {
     '16': 'icons/Icon16.png',
     '32': 'icons/Icon32.png',
@@ -34,12 +34,11 @@ module.exports = {
     persistent: false,
     page: 'pages/background.html'
   },
-  commands: {
-  },
+  commands: {},
   content_scripts: [
     {
       js: ['js/manifest.js', 'js/vendor.js', 'js/content.js'],
-      css: ['css/content-frame.css', 'css/content.css'],
+      css: ['css/content.css'],
       run_at: 'document_end',
       matches: ['<all_urls>'],
       all_frames: true

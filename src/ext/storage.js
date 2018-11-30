@@ -8,8 +8,7 @@ export class ExtStorage {
       // read current extension settings
       chrome.storage.sync.get('settings', ({ settings }) => {
         if (!settings) {
-          settings = {
-          };
+          settings = {};
         }
 
         resolve(settings);

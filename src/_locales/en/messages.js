@@ -2,7 +2,6 @@
  * @see {@link https://developer.chrome.com/extensions/i18n}
  */
 module.exports = {
-  module.exports = {
   extName: {
     message: 'SP MD Editor'
   },
